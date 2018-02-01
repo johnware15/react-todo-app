@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/johnware15/react-todo-app#readme",
   "dependencies": {
+    "lodash": "^4.17.4",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
