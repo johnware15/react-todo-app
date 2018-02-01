@@ -31,6 +31,7 @@ export default class App extends React.Component {
           todos={ this.state.todos }
           toggleTask={this.toggleTask.bind(this)}
           saveTask={this.saveTask.bind(this)}
+          deleteTask={this.deleteTask.bind(this)}
         />
       </div>
     );
@@ -54,6 +55,11 @@ export default class App extends React.Component {
     const foundToDo = _.find(this.state.todos, todo => todo.task === oldTask)
 
     foundToDo.task = newTask
+    this.setState({ todos: this.state.todos })
+  }
+
+  deleteTask(taskToDelete) {
+    _.remove(this.state.todos, todo => todo.task === taskToDelete)
     this.setState({ todos: this.state.todos })
   }
 }
