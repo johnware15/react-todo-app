@@ -9,24 +9,6 @@ export default class TodosList extends React.Component {
     }
   }
 
-  renderError() {
-    if(!this.state.error) {
-      return null
-    }
-
-    return <div style={{ color: 'red' }}>{this.state.error}</div>
-  }
-
-  render() {
-      console.log(this.props);
-    return (
-      <form onSubmit={this.handleCreate.bind(this)}>
-        <input type="text" placeholder="Add Task" ref="createInput" />
-        <button>Add</button>
-        {this.renderError()}
-      </form>
-    );
-  }
 
   handleCreate(event) {
     event.preventDefault()
@@ -53,5 +35,23 @@ export default class TodosList extends React.Component {
     } else {
       return null
     }
+  }
+  renderError() {
+    if(!this.state.error) {
+      return null
+    }
+
+    return <div style={{ color: 'red' }}>{this.state.error}</div>
+  }
+
+  render() {
+    console.log(this.props);
+    return (
+      <form onSubmit={this.handleCreate.bind(this)}>
+      <input type="text" placeholder="Add Task" ref="createInput" />
+      <button>Add</button>
+      {this.renderError()}
+      </form>
+    );
   }
 }
