@@ -2,18 +2,7 @@ import React from 'react'
 import CreateTodo from './create-todo'
 import TodosList from './todos-list'
 
-
 let todos = []
-// const todos = [
-//   {
-//     task: 'Make React tutorial',
-//     isCompleted: false
-//   },
-//   {
-//     task: 'Eat Breakfast',
-//     isCompleted: true
-//   }
-// ]
 
 export default class App extends React.Component {
   constructor(props) {
