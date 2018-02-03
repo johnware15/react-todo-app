@@ -13,8 +13,7 @@ module.exports = {
     filename: 'bundle.js'
   },
   resolve: {
-    // modulesDirectories: ['node_modules', 'src'],
-    extensions: ['.js']
+    extensions: ['.js', '.css']
   },
   module: {
     loaders: [
@@ -22,7 +21,6 @@ module.exports = {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         loaders: ['react-hot-loader/webpack', 'babel-loader']
-        // loaders: ['react-hot-loader/webpack', 'babel?presets[]=react,presets[]=es2015']
       }
     ]
   },

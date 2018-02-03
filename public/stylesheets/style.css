@@ -1,0 +1,67 @@
+body {
+  font-family: sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  color: white;
+  font-style: normal;
+  font-family: 'Arial' sans-serif;
+  background-color: blue;
+  text-align: center;
+}
+
+button {
+  border-radius: 5px;
+  color: white;
+}
+
+#add {
+  background-color: blue;
+  margin-left: 15px;
+  font-size: 24px;
+  border-radius: 15px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#save {
+  background-color: blue;
+  margin-left: 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#cancel {
+  background-color: grey;
+  margin-left: 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#edit {
+  background-color: blue;
+  margin-left: 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#delete {
+  background-color: red;
+  margin-left: 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+table {
+  margin-top: 15px;
+}

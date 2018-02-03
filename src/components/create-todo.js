@@ -9,7 +9,6 @@ export default class TodosList extends React.Component {
     }
   }
 
-
   handleCreate(event) {
     event.preventDefault()
 
@@ -49,7 +48,7 @@ export default class TodosList extends React.Component {
     return (
       <form onSubmit={this.handleCreate.bind(this)}>
       <input type="text" placeholder="Add Task" ref="createInput" />
-      <button>Add</button>
+      <button id="add"> + </button>
       {this.renderError()}
       </form>
     );
