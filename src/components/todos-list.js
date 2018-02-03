@@ -12,13 +12,14 @@ export default class TodosList extends React.Component {
 
   render() {
       console.log(this.props);
-    return (
-      <table>
+      return (
+        <table>
         <TodosListHeader />
         <tbody>
-          { this.renderItems() }
+        { this.renderItems() }
         </tbody>
-      </table>
-    );
+        </table>
+      );
+
   }
 }
