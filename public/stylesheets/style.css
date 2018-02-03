@@ -24,6 +24,7 @@ button {
   font-weight: bold;
   text-align: center;
   vertical-align: middle;
+  align: center;
 }
 
 #save {
@@ -64,4 +65,17 @@ button {
 
 table {
   margin-top: 15px;
+  align: center;
+  margin: auto;
+}
+
+input {
+  box-sizing: border-box;
+  padding: 9px 9px;
+  align: center;
+}
+
+form {
+  align: center;
+  margin: auto;
 }
