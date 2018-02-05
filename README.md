@@ -7,6 +7,7 @@ A todo list application that allows users to add, save, edit and delete tasks.
   + Webpack
   + Babel
   + Lodash
+  + CSS
 
 
 # User Stories
